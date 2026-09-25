@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10104e">
+  <title>¿Cómo duerme el mundo?</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main id="experience" aria-live="polite">
+    <section class="screen home active" id="home" aria-labelledby="home-title">
+      <div class="stars" aria-hidden="true"></div>
+      <div class="intro-copy">
+        <h1 id="home-title"><strong>¿Cómo duerme</strong><span>el mundo?</span></h1>
+        <p class="tagline">Un día, un país, una forma diferente de dormir.</p>
+        <p class="intro-text">Descubre cómo cambia nuestro tiempo de descanso<br> alrededor del mundo y qué relación tiene con la forma en<br> que vivimos, trabajamos y distribuimos nuestro tiempo.</p>
+        <button class="outline-button" data-go="countries">Comenzar <span aria-hidden="true">⟶</span></button>
+      </div>
+      <div class="globe-wrap" aria-hidden="true"><img class="globe" src="assets/mundo.png" alt=""></div>
+      <div class="cloudscape home-cloudscape" aria-hidden="true">
+        <svg class="cloud-art" viewBox="0 0 1226 150" preserveAspectRatio="none" focusable="false">
+          <defs>
+            <linearGradient id="home-cloud-back" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f7d6ff"/><stop offset=".22" stop-color="#c39cff"/><stop offset=".68" stop-color="#8067f5"/><stop offset="1" stop-color="#5145e7"/></linearGradient>
+            <linearGradient id="home-cloud-front" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ae91ff"/><stop offset=".5" stop-color="#6856ee"/><stop offset="1" stop-color="#403de0"/></linearGradient>
+          </defs>
+          <path d="M0 34 C34 34 64 52 78 91 C99 81 118 90 132 117 C160 91 203 92 237 122 C264 69 323 54 357 107 C383 51 431 41 464 99 C495 46 540 26 576 32 C615 36 638 68 658 101 C693 43 744 18 783 28 C821 38 843 67 861 104 C889 69 923 55 954 68 C976 78 984 93 993 113 C1023 59 1063 33 1096 29 C1133 25 1160 49 1170 88 C1188 65 1207 57 1226 59 L1226 150 L0 150 Z" fill="url(#home-cloud-back)" stroke="#f4d3ff" stroke-opacity=".24" stroke-width="2"/>
+          <path d="M0 100 C34 94 66 100 93 127 C128 111 169 115 199 145 C230 108 272 101 307 130 C340 101 379 103 411 139 C445 112 481 113 509 145 C539 103 579 94 615 126 C648 97 690 99 720 131 C753 104 789 105 817 137 C851 100 891 97 923 128 C955 107 991 110 1017 139 C1051 105 1090 102 1120 132 C1153 111 1191 115 1226 139 L1226 150 L0 150 Z" fill="url(#home-cloud-front)"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="screen countries" id="countries" aria-labelledby="countries-title" inert>
+      <div class="stars" aria-hidden="true"></div>
+      <h2 class="country-heading" id="countries-title"><strong>Elige</strong> un país</h2>
+      <nav class="country-grid" aria-label="Elige un país">
+        <button data-country="Sudáfrica">Sudáfrica</button><button data-country="China">China</button><button data-country="Estados Unidos">Estados Unidos</button><button data-country="México">México</button><button data-country="Egipto">Egipto</button>
+        <button data-country="Alemania">Alemania</button><button data-country="Corea del Sur">Corea del Sur</button><button data-country="Japón">Japón</button><button data-country="Brasil">Brasil</button><button data-country="Kuwait">Kuwait</button>
+      </nav>
+      <div class="country-stage">
+        <article class="country-card kuwait-card" data-select="Kuwait" tabindex="0" role="button" aria-label="Explorar Kuwait">
+          <div class="mascot-slot"><img src="assets/personaje-kuwait.png" alt="" onerror="this.style.display='none'"><span class="asset-hint" aria-hidden="true"></span></div>
+          <p class="country-name">Kuwait</p><p class="sleep-time" data-duration="375">0 h 0 min</p><p class="sub-label">de sueño</p><div class="progress"><span></span></div>
+        </article>
+        <article class="country-card japan-card" data-select="Japón" tabindex="0" role="button" aria-label="Explorar Japón">
+          <div class="mascot-slot"><img src="assets/personaje-japon.png" alt="" onerror="this.style.display='none'"><span class="asset-hint" aria-hidden="true"></span></div>
+          <p class="country-name">Japón</p><p class="sleep-time" data-duration="474">0 h 0 min</p><p class="sub-label">de sueño</p><div class="progress"><span></span></div>
+        </article>
+        <article class="country-card mexico-card" data-select="México" tabindex="0" role="button" aria-label="Explorar México">
+          <div class="mascot-slot"><img src="assets/personaje-mexico.png" alt="" onerror="this.style.display='none'"><span class="asset-hint" aria-hidden="true"></span></div>
+          <p class="country-name">México</p><p class="sleep-time" data-duration="499">0 h 0 min</p><p class="sub-label">de sueño</p><div class="progress"><span></span></div>
+        </article>
+      </div>
+      <div class="cloudscape country-cloudscape" aria-hidden="true"></div>
+    </section>
+
+    <section class="screen japan" id="japan" aria-labelledby="japan-title" inert>
+      <div class="japan-copy">
+        <h2 id="japan-title">Japón</h2>
+        <div class="sleep-stat"><strong>7 h 54 min</strong><span>de sueño al día</span></div>
+        <div class="metrics"><div><strong>1,617 h</strong><span>trabajadas al año</span></div><div><strong>1 h 19 min</strong><span>Traslado promedio en<br>días laborables</span></div></div>
+        <p class="context">Aunque el promedio de sueño es de 7 h 54 min, las jornadas laborales extensas pueden dejar menos tiempo disponible para otras actividades, incluido el descanso. La OCDE señala que las jornadas largas en Japón están asociadas con problemas de equilibrio entre trabajo y vida personal.</p>
+      </div>
+      <img class="japan-character" src="assets/personaje-japon.png" alt="Personaje japonés dormido">
+      <div class="cloud-transition" aria-hidden="true"></div>
+      <button class="outline-button japan-continue" data-detail-next>Continuar <span aria-hidden="true">⟶</span></button>
+    </section>
+
+    <section class="screen kuwait" id="kuwait" aria-labelledby="kuwait-title" inert>
+      <div class="kuwait-copy japan-copy">
+        <h2 id="kuwait-title">Kuwait</h2>
+        <div class="sleep-stat"><strong>6 h 17 min</strong><span>de sueño al día</span></div>
+        <div class="metrics">
+          <div><strong>48 h</strong><span>de jornada laboral<br>máxima semanal</span></div>
+          <div><strong>57.6%</strong><span>reportó dormir menos<br>de 6 h al día</span></div>
+        </div>
+        <p class="context">Dormir menos de lo necesario también puede tener consecuencias en el cuerpo. En un estudio realizado con adultos urbanos de Kuwait, una menor duración del sueño se relacionó con la obesidad y con diversos factores de riesgo metabólico, como la presión arterial y la resistencia a la insulina.</p>
+      </div>
+      <img class="kuwait-character" src="assets/personaje-kuwait-dormido.png" alt="Personaje de Kuwait dormido">
+      <div class="cloud-transition" aria-hidden="true"></div>
+      <button class="outline-button japan-continue" data-detail-next>Continuar <span aria-hidden="true">⟶</span></button>
+    </section>
+
+    <section class="screen mexico" id="mexico" aria-labelledby="mexico-title" inert>
+      <div class="mexico-copy japan-copy">
+        <h2 id="mexico-title">México</h2>
+        <div class="sleep-stat"><strong>8 h 19 min</strong><span>de sueño al día</span></div>
+        <div class="metrics">
+          <div><strong>2,215 h</strong><span>trabajadas al año<br>por trabajador</span></div>
+          <div><strong>37%</strong><span>reportó tener<br>problemas de sueño</span></div>
+        </div>
+        <p class="context">La ciudad también se lleva algunas horas de la noche. En México, un estudio nacional encontró que el 37% de los adultos reporta problemas de sueño y que quienes vivían en zonas urbanas dormían menos que quienes vivían en zonas rurales.</p>
+      </div>
+      <img class="mexico-character" src="assets/personaje-mexico-dormido.png" alt="Personaje mexicano dormido">
+      <div class="cloud-transition" aria-hidden="true"></div>
+      <button class="outline-button japan-continue" data-detail-next>Continuar <span aria-hidden="true">⟶</span></button>
+    </section>
+
+    <section class="screen finale" id="final" aria-labelledby="final-title" inert>
+      <div class="stars" aria-hidden="true"></div>
+      <div class="final-copy">
+        <h2 id="final-title"><strong>Todos dormimos bajo el mismo cielo.</strong><span>Pero no todos llegamos a la noche de la misma manera.</span></h2>
+        <p>Hay días que terminan demasiado tarde.<br>Mañanas que comienzan demasiado pronto.<br>Horas que se van trabajando, estudiando, viajando, esperando.<br>Y entre todas ellas, intentamos encontrar un momento para cerrar los ojos.</p>
+        <h3>¿Qué lugar ocupa el descanso en tu día?</h3>
+        <button class="outline-button" data-go="home">Explora otro país <span aria-hidden="true">⟶</span></button>
+      </div>
+      <div class="globe-wrap" aria-hidden="true"><img class="globe" src="assets/mundo.png" alt=""></div>
+    </section>
+  </main>
+</body>
+</html>
